@@ -1,10 +1,18 @@
 //CREAZIONE DELLE VARIABILI 
 
 //Chiedere all'utente il numero di chilometri da percorrere
-const chilometri = prompt("Quanti chilometri vorresti percorrere");
+const chilometri = parseInt(prompt("Quanti chilometri vorresti percorrere"));
+console.log(chilometri);
+
 
 //Chiedere all'utente l'età del passegero
-const età = prompt("Quanti anni hai?");
+const età = parseInt(prompt("Quanti anni hai?"));
+console.log(età);
 
 //Impostare il prezzo al chilometro e calcolare il totale prima degli sconti
 const prezzoAlChilometro = 0.21;
+//Variabile prezzo base
+const prezzoBase = chilometri * prezzoAlChilometro;
+console.log(prezzoBase);
+
+//Verifico le condizioni per applicare gli sconti
