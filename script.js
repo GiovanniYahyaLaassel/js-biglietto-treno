@@ -4,7 +4,6 @@
 const chilometri = parseInt(prompt("Quanti chilometri vorresti percorrere"));
 console.log(chilometri);
 
-
 //Chiedere all'utente l'età del passegero
 const età = parseInt(prompt("Quanti anni hai?"));
 console.log(età);
@@ -16,3 +15,10 @@ const prezzoBase = chilometri * prezzoAlChilometro;
 console.log(prezzoBase);
 
 //Verifico le condizioni per applicare gli sconti
+
+
+if(età < 18){
+   let sconto = prezzoBase * 20 / 100; 
+   let bigliettoScontato = prezzoBase - sconto;
+   console.log(`Il costo del biglietto è ${bigliettoScontato.toFixed(2)} €`);
+}
