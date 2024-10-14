@@ -22,3 +22,11 @@ if(età < 18){
    let bigliettoScontato = prezzoBase - sconto;
    console.log(`Il costo del biglietto è ${bigliettoScontato.toFixed(2)} €`);
 }
+else if (età > 65){
+    let sconto = prezzoBase * 40 / 100;
+    let bigliettoScontato = prezzoBase - sconto;
+    console.log(`Il costo del biglietto è ${bigliettoScontato.toFixed(2)} €`);
+}
+else{
+    console.log(`Il costo del biglietto è ${prezzoBase.toFixed(2)} €`);
+}
